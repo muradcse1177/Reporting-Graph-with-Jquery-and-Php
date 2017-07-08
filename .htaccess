@@ -1,0 +1,38 @@
+#REMOVE .PHP ON LINK
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+#Error pages
+ErrorDocument 403 /errors/403.htm
+ErrorDocument 404 /errors/404.htm
+
+#Block ip addresses
+#order allow,deny
+
+#deny from 107.167.
+#deny from 168.235.
+#deny from 8.37.
+#deny from 64.233.
+#deny from 123.108.
+
+
+#deny from 185.25.151.159
+#deny from 104.148.71.34
+#deny from 91.196.50.33
+#deny from 104.148.38.2
+#deny from 94.185.83.100
+#deny from 89.248.174.4 
+#deny from 213.152.161.101
+#deny from 61.216.2.13
+#deny from 168.235.196.25
+#deny from greendata.pl
+#deny from webxury.com
+#deny from playrps.com
+#deny from playrps.net
+#deny from trackcpa.net
+
+#allow from all
+
+ 
